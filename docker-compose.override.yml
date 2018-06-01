@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  mycatalogmicroservice:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ConnectionString=Server=sql.data;Database=Microsoft.eShopOnContainers.Services.CatalogDb;User Id=sa;Password=sa
+    ports:
+      - "5101:80"
